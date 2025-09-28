@@ -4,7 +4,7 @@ This is the seed project you need to use if you're going to create an API using 
 
 ## Running the example
 
-In order to run the example you need to have `python3` (any version higher than `3.6`) and `pip3` installed.
+To run the example you need to have `python3` (any version higher than `3.6`) and `pip3` installed.
 
 ### Configuration
 
@@ -18,13 +18,11 @@ To create a `.env` file you can copy the `.env.example` file and fill the values
 cp .env.example .env
 ```
 
-Alternatively you can use environment variables to define your application's settings (remember to update the values accordingly):
+Alternatively, you can use environment variables to define your application's settings (remember to update the values accordingly):
 
 ```console
 export AUTH0_DOMAIN='your.domain.auth0.com'
 export AUTH0_API_AUDIENCE='your.api.audience'
-export AUTH0_ISSUER='https://your.domain.auth0.com'
-export AUTH0_ALGORITHMS='RS256'
 ```
 
 ### Spin up the server
@@ -38,7 +36,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-2. Install the needed dependencies with:
+2. Install the necessary dependencies with:
 
 ```console
 pip install -r requirements.txt
